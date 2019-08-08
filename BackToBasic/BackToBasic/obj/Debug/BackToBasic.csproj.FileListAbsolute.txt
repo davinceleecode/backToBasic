@@ -68,3 +68,6 @@ C:\Users\vincent.lee.c.flores\Desktop\Source Code\ACN\BackToBasic\BackToBasic\Ba
 C:\Users\vincent.lee.c.flores\Desktop\Source Code\ACN\BackToBasic\BackToBasic\BackToBasic\bin\Debug\AutoMapper.pdb
 C:\Users\vincent.lee.c.flores\Desktop\Source Code\ACN\BackToBasic\BackToBasic\BackToBasic\bin\Debug\AutoMapper.xml
 C:\Users\vincent.lee.c.flores\Desktop\Source Code\ACN\BackToBasic\BackToBasic\BackToBasic\bin\Debug\System.ValueTuple.xml
+C:\Users\vincent.lee.c.flores\Desktop\leeSourceCode\backToBasic\BackToBasic\BackToBasic\bin\Debug\BackToBasic.exe.config
+C:\Users\vincent.lee.c.flores\Desktop\leeSourceCode\backToBasic\BackToBasic\BackToBasic\obj\Debug\BackToBasic.exe
+C:\Users\vincent.lee.c.flores\Desktop\leeSourceCode\backToBasic\BackToBasic\BackToBasic\obj\Debug\BackToBasic.pdb

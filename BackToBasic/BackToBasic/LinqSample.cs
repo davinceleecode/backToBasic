@@ -10,7 +10,7 @@ using System.Diagnostics;
 
 public class LinqSample
 {
-    
+
     public static void Main()
     {
         //var people = GenerateListOfPeople();
@@ -104,7 +104,7 @@ public class LinqSample
             carArray[3] = new Car { Sakyanan = "Freed", Speed = 30 };
         }
 
-     
+
 
         public IEnumerator GetEnumerator()
         {
@@ -129,7 +129,7 @@ public class LinqSample
     public static List<Person> GenerateListOfPeople()
     {
         var people = new List<Person>();
-        
+
         people.Add(new Person { FirstName = "Eric", LastName = "Fleming", Occupation = "Dev", Age = 24 });
         people.Add(new Person { FirstName = "Steve", LastName = "Smith", Occupation = "Manager", Age = 40 });
         people.Add(new Person { FirstName = "Brendan", LastName = "Enrick", Occupation = "Dev", Age = 30 });
