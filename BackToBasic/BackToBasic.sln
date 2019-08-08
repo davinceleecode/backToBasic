@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackToBasic", "BackToBasic\BackToBasic.csproj", "{C9D769EB-5361-4F16-B571-2207D9F121B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsControlLibrary1", "WindowsFormsControlLibrary1\WindowsFormsControlLibrary1.csproj", "{CA2C6113-1F68-4018-B37F-6704396CE1DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JQueryDemo", "JQueryDemo\JQueryDemo.csproj", "{8BA85A12-9B07-415A-AB68-DBD894D75518}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9D769EB-5361-4F16-B571-2207D9F121B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9D769EB-5361-4F16-B571-2207D9F121B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9D769EB-5361-4F16-B571-2207D9F121B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9D769EB-5361-4F16-B571-2207D9F121B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA2C6113-1F68-4018-B37F-6704396CE1DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA2C6113-1F68-4018-B37F-6704396CE1DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA2C6113-1F68-4018-B37F-6704396CE1DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA2C6113-1F68-4018-B37F-6704396CE1DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BA85A12-9B07-415A-AB68-DBD894D75518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BA85A12-9B07-415A-AB68-DBD894D75518}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BA85A12-9B07-415A-AB68-DBD894D75518}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BA85A12-9B07-415A-AB68-DBD894D75518}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

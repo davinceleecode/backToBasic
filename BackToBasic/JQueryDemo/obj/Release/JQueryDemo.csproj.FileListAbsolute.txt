@@ -1,0 +1,6 @@
+C:\Users\vincent.lee.c.flores\Desktop\Source Code\ACN\BackToBasic\BackToBasic\JQueryDemo\bin\JQueryDemo.dll.config
+C:\Users\vincent.lee.c.flores\Desktop\Source Code\ACN\BackToBasic\BackToBasic\JQueryDemo\bin\JQueryDemo.dll
+C:\Users\vincent.lee.c.flores\Desktop\Source Code\ACN\BackToBasic\BackToBasic\JQueryDemo\bin\JQueryDemo.pdb
+C:\Users\vincent.lee.c.flores\Desktop\Source Code\ACN\BackToBasic\BackToBasic\JQueryDemo\obj\Release\JQueryDemo.csprojResolveAssemblyReference.cache
+C:\Users\vincent.lee.c.flores\Desktop\Source Code\ACN\BackToBasic\BackToBasic\JQueryDemo\obj\Release\JQueryDemo.dll
+C:\Users\vincent.lee.c.flores\Desktop\Source Code\ACN\BackToBasic\BackToBasic\JQueryDemo\obj\Release\JQueryDemo.pdb

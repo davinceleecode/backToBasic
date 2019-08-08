@@ -1,0 +1,362 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <!--<script src="jquery-3.3.1.js"></script>-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.js"></script>
+    <link href="bootstrap.css" rel="stylesheet" />
+
+    <!-- jQuery UI Dialog - Animation -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <script>
+
+        //using CDN
+        window.$ || document.write("<script src='jquery-3.3.1.js'><\/script>");
+
+
+        
+        
+
+        $(document).ready(function () {
+
+            //JQuery UI Dialog - Animation
+            $('#dialog').dialog({
+                autoOpen: false,
+                show: {
+                    effect: "blind",
+                    duration: 500
+                },
+                hide: {
+                    effect: "explode",
+                    duration: 500
+                }
+            });
+
+            
+
+            $('#button1').click(function () {
+                $('#dialog p').text('Hello Vincent, Welcome to the JS World!');
+                $("#dialog").dialog("open");
+            })
+
+            //change the background color for button
+            $('#button1').css('background-color', 'yellow')
+
+            //ID Selector
+            $('#loopEachRow').click(function () {
+                $('#table1 tr').each(function () {
+                    alert($(this).html());
+                })
+            });
+           
+            //Element Selector
+            $('#table2 tr:even').css('background-color', 'yellow');
+            $('#table2 tr:odd').css('background-color', 'gray');
+
+            //Class Selector
+            $('.small,span.big').css('border', '5px solid red');
+
+            //Case Insensitive Attribute
+            $('div[title]').filter(function () {
+                return $(this).attr('title').toLowerCase() == 'divtitle';
+            }).css('border', '3px solid red');
+
+            $('div[title]').filter(function () {
+                return (/div/i).test($(this).attr('title'));
+            }).css('border', '3px solid red');
+
+            $('div[title]').filter(function () {
+                return RegExp('Div','i').test($(this).attr('title'));
+            }).css('border', '3px solid red');
+
+            //Check selector | using radio button
+            $('#btnSubmit').click(function () {
+                var result = $('input[type="radio"]:checked');
+                if (result.length > 0) {
+                    $('#divResult').html(result.val() + " is checked");
+                }
+                else {
+                    $('#divResult').html("No radio button checked");
+                }
+
+            });
+
+
+            //Check selector | using checkbox
+            $('input[name="skills"').click(function () {
+                getCheckedCheckBoxes('skills');
+            });
+
+
+            $('input[name="cities"').click(function () {
+                getCheckedCheckBoxes('cities');
+            });
+
+
+            var getCheckedCheckBoxes = function (groupName) {
+                var result = $('input[name="' + groupName + '"]:checked');;
+                if (result.length > 0) {
+                    var resultString = result.length + " checkboxes checked<br/>";
+
+
+                    result.each(function ()
+                    {
+
+                        var selectedValue = $(this).val();
+                        //resultString += selectedValue + "-" + $('label[for="cb-' + selectedValue + '"]').text() + "<br/>";
+                        resultString += selectedValue + "-" + $(this).next().text() + "<br/>";
+                    });
+                    $('#div' + groupName).html(resultString);
+                }
+                else {
+                    $('#div'+ groupName).html("No checkbox checked");
+                }
+
+            };
+
+
+            //Selected selector | OptionButton
+            $('#selectCountries').change(function () {
+                var selectedOption = $('#selectCountries option:selected');
+                if (selectedOption.length > 0) {
+                    var resultString = '';
+                    selectedOption.each(function () {
+                        resultString += "Value =" + $(this).val() + ", Text = " + $(this).text() + "</br>";
+                    });
+                    $('#divResultOption').html(resultString);
+
+                }
+            });
+
+            //Disabled selector
+            $('input[type="text"]:enabled').css('border', '3px solid red');
+
+
+            //Wrap Elements
+            $('div[id="disabledSelector"]').wrap('<div class="containerDiv"></div>');
+        });
+    </script>
+
+    <style>
+        .containerDiv{
+            background-color:red;
+            color:darkblue;
+            font-weight:bold;
+            margin:3px;
+        }
+    </style>
+</head>
+<body style="padding-top:10px">
+
+    <!-- jQuery Basic dialog -->
+    <div id="dialog" title="Basic dialog">
+        <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+    </div>
+
+    <!--Change the background color for button-->
+    <div class="col-md-10 col-md-offset-1">
+        <h4>Change the background color for button</h4>
+        <input type="button" id="button1" value="Click Me" />
+        <br /><br />
+
+        <h4>Id Selector</h4>
+        <input type="button" id="loopEachRow" value="Loop each row in Table" />
+        <br />
+        <div class="well">
+            <table id="table1" class="table table-bordered">
+                <tr class="success">
+                    <td>C#</td>
+                    <td>ASP.NET</td>
+                    <td>SQL Server</td>
+                </tr>
+                <tr>
+                    <td>ADO.NET</td>
+                    <td>jQuery</td>
+                    <td>JavaScript</td>
+                </tr>
+                <tr class="success">
+                    <td>AJAX</td>
+                    <td>CSS</td>
+                    <td>HTML</td>
+                </tr>
+                <tr>
+                    <td>VB</td>
+                    <td>Dot NET</td>
+                    <td>Visual C++</td>
+                </tr>
+                <tr class="success">
+                    <td>Oracle</td>
+                    <td>Java</td>
+                    <td>J2EE</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <!--Element Selector-->
+    <div class="col-md-10 col-md-offset-1">
+        <h4>Element Selector</h4>
+        <table border="1" id="table2">
+            <tr>
+                <td>C#</td>
+                <td>ASP.NET</td>
+                <td>SQL Server</td>
+            </tr>
+            <tr>
+                <td>ADO.NET</td>
+                <td>jQuery</td>
+                <td>JavaScript</td>
+            </tr>
+            <tr>
+                <td>AJAX</td>
+                <td>CSS</td>
+                <td>HTML</td>
+            </tr>
+            <tr>
+                <td>VB</td>
+                <td>Dot NET</td>
+                <td>Visual C++</td>
+            </tr>
+            <tr>
+                <td>Oracle</td>
+                <td>Java</td>
+                <td>J2EE</td>
+            </tr>
+        </table>
+     </div>
+
+    <!-- Class Selector -->
+    <div class="col-md-2 col-md-offset-1">
+        <br />
+        <span class="small">
+            Span 1
+        </span>
+        <br /><br />
+        <div class="small">
+            Div 1
+        </div>
+        <br />
+        <span class="big">
+            Span 2
+        </span>
+        <br />
+        <p class="big"> This is a paragraph</p>
+     </div>
+
+    <!-- Case Insensitive Attribute  -->
+    <div class="col-md-2 col-md-offset-1">
+        <h4> Case Insensitive Attribute </h4>
+        <div title="DivTitle">
+            DIV 1
+        </div>
+        <br />
+        <div title="DIVTITLE">
+            DIV 2
+        </div>
+        <br />
+        <div title="divtitle">
+            DIV 3
+        </div>
+    </div>
+
+    <!-- Check Selector | RadioButton-->
+    <div class="col-md-2 col-md-offset-1">
+        <h4> Check Selector | RadioButton </h4>
+        Gender :
+        <input type="radio" name="gender" value="Male" />Male
+        <input type="radio" name="gender" value="Female" />Female
+        <br /><br />
+        <input id="btnSubmit" type="submit" value="submit" />
+        <br /><br />
+        <div id="divResult"></div>
+    </div>
+
+    <!-- Check Selector | Checkedbox -->
+    <div class="col-md-2 col-md-offset-1">
+        <h4> Check Selector | Skills </h4>
+        Skills :
+        <input type="checkbox" name="skills" value="js"/>
+        <label for="cb-js">JavaScript</label>
+        <input type="checkbox" name="skills" value="jq" />
+        <label for="cb-jq">jQuery</label>
+        <input type="checkbox" name="skills" value="cs" />
+        <label for="cb-cs">C#</label>
+        <input type="checkbox" name="skills" value="vb" />
+        <label for="cb-vb">Visual Basic</label>
+        <br /><br />
+         
+    
+        
+  
+        <h4> Check Selector | Cities </h4>
+        Cities :
+        <input type="checkbox" name="cities" value="ny" />
+        <label for="cb-ny">New York</label>
+        <input type="checkbox" name="cities" value="nd" />
+        <label for="cb-nd">New Delhi</label>
+        <input type="checkbox" name="cities" value="ln" />
+        <label for="cb-ln">London</label>
+        <br /><br />
+
+        <div id="divskills"></div>
+        <br /><br />
+        <div id="divcities"></div>
+    </div>
+
+    <!-- Selected selector | OptionButton -->
+    <div class="col-md-4 col-md-offset-1">
+        <h4> Check Selector | Country </h4>
+        Country :
+        <select id="selectCountries">
+            <option value="USA">United Status</option>
+            <option value="IND">India</option>
+            <option value="UK">United Kingdom</option>
+            <option value="CA">Canada</option>
+            <option value="AU">Australia</option>
+        </select>
+        <br /><br />
+        <div id="divResultOption"></div>
+    </div>
+
+    <!-- Disabled selector -->
+    <div id="disabledSelector" class="col-md-4 col-md-offset-1">
+        <table>
+            <tr>
+                <td>First Name </td>
+                <td><input type="text" disabled="disabled" /></td>
+            </tr>
+            <tr>
+                <td>Last Name </td>
+                <td><input type="text" disabled="disabled" /></td>
+            </tr>
+            <tr>
+                <td>Email </td>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <td>Gender </td>
+                <td>
+                    <select id="selectGender" disabled="disabled">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Comments</td>
+                <td><textarea></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Submit" disabled="disabled" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
