@@ -6,3 +6,11 @@ C:\Users\vincent.lee.c.flores\Desktop\Source Code\ACN\BackToBasic\BackToBasic\Wi
 C:\Users\vincent.lee.c.flores\Desktop\Source Code\ACN\BackToBasic\BackToBasic\WindowsFormsControlLibrary1\obj\Debug\WindowsFormsControlLibrary1.dll
 C:\Users\vincent.lee.c.flores\Desktop\Source Code\ACN\BackToBasic\BackToBasic\WindowsFormsControlLibrary1\obj\Debug\WindowsFormsControlLibrary1.pdb
 C:\Users\vincent.lee.c.flores\Desktop\Source Code\ACN\BackToBasic\BackToBasic\WindowsFormsControlLibrary1\obj\Debug\WindowsFormsControlLibrary1.csprojResolveAssemblyReference.cache
+C:\Users\vincent.lee.c.flores\Desktop\LeeSourceCode\backToBasic\BackToBasic\WindowsFormsControlLibrary1\bin\Debug\WindowsFormsControlLibrary1.dll
+C:\Users\vincent.lee.c.flores\Desktop\LeeSourceCode\backToBasic\BackToBasic\WindowsFormsControlLibrary1\bin\Debug\WindowsFormsControlLibrary1.pdb
+C:\Users\vincent.lee.c.flores\Desktop\LeeSourceCode\backToBasic\BackToBasic\WindowsFormsControlLibrary1\obj\Debug\WindowsFormsControlLibrary1.csprojResolveAssemblyReference.cache
+C:\Users\vincent.lee.c.flores\Desktop\LeeSourceCode\backToBasic\BackToBasic\WindowsFormsControlLibrary1\obj\Debug\WindowsFormsControlLibrary1.LeeCombobox.resources
+C:\Users\vincent.lee.c.flores\Desktop\LeeSourceCode\backToBasic\BackToBasic\WindowsFormsControlLibrary1\obj\Debug\WindowsFormsControlLibrary1.Properties.Resources.resources
+C:\Users\vincent.lee.c.flores\Desktop\LeeSourceCode\backToBasic\BackToBasic\WindowsFormsControlLibrary1\obj\Debug\WindowsFormsControlLibrary1.csproj.GenerateResource.Cache
+C:\Users\vincent.lee.c.flores\Desktop\LeeSourceCode\backToBasic\BackToBasic\WindowsFormsControlLibrary1\obj\Debug\WindowsFormsControlLibrary1.dll
+C:\Users\vincent.lee.c.flores\Desktop\LeeSourceCode\backToBasic\BackToBasic\WindowsFormsControlLibrary1\obj\Debug\WindowsFormsControlLibrary1.pdb
